@@ -6,8 +6,8 @@ public class InputHandler : MonoBehaviour
 {
     public GameObject actor;
     Animator anim;
-    sdfdsf keySpace,keyP,keyK;
-
+    Command keySpace,keyP,keyK,keyUpArrow;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,8 @@ public class InputHandler : MonoBehaviour
         keySpace = new PerformJump();
         keyP = new PerformPunch();
         keyK = new PerformKick();
+        keyUpArrow = new MoveForward();
+        Camera.main.GetComponent<CameraFollow360>().player = actor.transform;
     }
 
     // Update is called once per frame
@@ -31,6 +33,10 @@ public class InputHandler : MonoBehaviour
         else if(Input.GetKeyDown(KeyCode.K))
         {
             keyK.Execute(anim);
+        }
+        else if(Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            keyUpArrow.Execute(anim);
         }
     }
 }
