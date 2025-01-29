@@ -5,6 +5,8 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     public GameObject actor;
+    public Stack<Command> events;
+
     Animator anim;
     Command keySpace,keyP,keyK,keyUpArrow;
     
@@ -25,18 +27,22 @@ public class InputHandler : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             keySpace.Execute(anim);
+            events.Push(keySpace);
         }
         else if(Input.GetKeyDown(KeyCode.P))
         {
             keyP.Execute(anim);
+            events.Push(keyP);
         }
         else if(Input.GetKeyDown(KeyCode.K))
         {
             keyK.Execute(anim);
+            events.Push(keyK);
         }
         else if(Input.GetKeyDown(KeyCode.UpArrow))
         {
             keyUpArrow.Execute(anim);
+            events.Push(keyUpArrow);
         }
     }
 }
