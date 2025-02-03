@@ -365,6 +365,8 @@
 "Assets/Command Pattern/Scripts/Command.cs"
 "Assets/Command Pattern/Scripts/InputHandler.cs"
 "Assets/Command Pattern/Scripts/PlayerController.cs"
+"Assets/Flyweight/CreateCubeMesh.cs"
+"Assets/Flyweight/CreateWorldPrefab.cs"
 -langversion:9.0
 /deterministic
 /optimize+
