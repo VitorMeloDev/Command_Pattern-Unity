@@ -364,14 +364,14 @@
 "Assets/Command Pattern/Scripts/CameraFollow360.cs"
 "Assets/Command Pattern/Scripts/Command.cs"
 "Assets/Command Pattern/Scripts/InputHandler.cs"
-"Assets/Flyweight/Investigating/CreateCubeMesh.cs"
-"Assets/Flyweight/Investigating/CreateWorldPrefab.cs"
-"Assets/ScriptableObject/3D Game Kit - Environment Pack/Models/AIControl.cs"
-"Assets/ScriptableObject/Scripts/Plant.cs"
-"Assets/ScriptableObject/Scripts/PlantData.cs"
-"Assets/ScriptableObject/Scripts/PlayerController.cs"
-"Assets/ScriptableObject/SetPlantInfo.cs"
-"Assets/ScriptableObject/WorldManager.cs"
+"Assets/Flyweight/Investigating Memory/CreateCubeMesh.cs"
+"Assets/Flyweight/Investigating Memory/CreateWorldPrefab.cs"
+"Assets/Flyweight/ScriptableObject/3D Game Kit - Environment Pack/Models/AIControl.cs"
+"Assets/Flyweight/ScriptableObject/Scripts/Plant.cs"
+"Assets/Flyweight/ScriptableObject/Scripts/PlantData.cs"
+"Assets/Flyweight/ScriptableObject/Scripts/PlayerController.cs"
+"Assets/Flyweight/ScriptableObject/SetPlantInfo.cs"
+"Assets/Flyweight/ScriptableObject/WorldManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+
